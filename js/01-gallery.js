@@ -28,6 +28,8 @@ function imageClick(e){
         const instance = basicLightbox.create(`<img src="${originalImg}" width ="800" height ="600"/>`);
         instance.show();
 
+
+        //add escape listener
         const escapeListener = function(event) {
             if (event.key === "Escape") {
                 instance.close();
